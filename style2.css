@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 105, 233, 0.8),
+      rgba(0, 105, 233, 0.8)
+    ),
+    url("background.jpg");
+  background-size: cover;
+}
+.nav-bar {
+  display: flex;
+  height: 80px;
+  font-family: "Poppins", sans-serif;
+}
+.nav-left {
+  flex-basis: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  max-width: 75px;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
+}
+.inner ul {
+  margin-left: 10px;
+  z-index: 2;
+}
+.inner ul li {
+  margin: 0 20px;
+  display: inline-block;
+  list-style: none;
+}
+.inner ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-right ul li img {
+  max-width: 35px;
+}
+.nav-right ul {
+  float: right;
+  padding: 20px 50px 10px 50px;
+  /* filter: invert(1); */
+}
+.nav-right ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 50px;
+}
+.nav-right ul li input {
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #000;
+  border-bottom: 1px solid rgba(19, 18, 18, 0.5);
+}
+.nav-right ul li input::-webkit-input-placeholder {
+  color: rgba(19, 18, 18, 0.5);
+  font-weight: 550;
+}
+.nav-right ul li input:focus {
+  transition: 0.5s;
+  border-bottom: 1px solid #3186ed;
+}
+h2 {
+  font-family: "Poppins" !important;
+  font-weight: 400;
+  position: absolute;
+  left: 600px;
+  color: #fff;
+  font-size: 30px;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 105, 233, 0.8),
+      rgba(0, 105, 233, 0.8)
+    ),
+    url("background.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+#name,
+#email,
+#phone {
+  height: 40px;
+  margin: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-weight: 400;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid white !important;
+}
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.btn {
+  margin: 20px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  height: 40px;
+  width: 90px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: rgba(0, 105, 233, 0.8);
+  transition: 0.5s;
+}
