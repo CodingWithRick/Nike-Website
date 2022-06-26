@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nike</title>
     <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
@@ -36,21 +36,24 @@
       </div>
     <div class="box">
       <h2>Contact Us</h2>
-      <form method="post" action="" class="myForm">
-        <input type="text" id="name" placeholder="Enter your name" required />
+      <form method="POST" action="https://formsubmit.co/mrrick28122007@gmail.com"  class="myForm">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
         <input
           type="email"
           id="email"
+          name="email"
           placeholder="Enter your email address"
           required
         />
+        <input type="hidden" name="_next" value="https://codingwithrick.github.io/Nike-Website/thanks.html" />
         <input
           type="text"
           id="phone"
+          name="phone"
           placeholder="Enter your Number"
           required
         />
-        <button class="btn" action="#">Submit</button>
+        <button class="btn" type="submit">Send</button>
       </form>
     </div>
   </body>
